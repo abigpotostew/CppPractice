@@ -10,20 +10,22 @@
 		6B1DE3A818538D5800D3215F /* InterviewTests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B1DE3A718538D5800D3215F /* InterviewTests.1 */; };
 		6B1DE3B018538F3D00D3215F /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1DE3AF18538F3D00D3215F /* gtest.framework */; };
 		6B1DE3C4185391E400D3215F /* Split_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B1DE3C3185391E400D3215F /* Split_unittest.cpp */; };
-		6B723B461853949F00E12A56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B1DE3A518538D5800D3215F /* main.cpp */; };
 		6B723B4C1853953200E12A56 /* ListKTest_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B491853953200E12A56 /* ListKTest_unittest.cpp */; };
-		6B723B4D1853953200E12A56 /* ListKTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B4A1853953200E12A56 /* ListKTest.cpp */; };
 		6B723B501853CEFF00E12A56 /* ReverseString_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B4F1853CEFF00E12A56 /* ReverseString_unittest.cpp */; };
 		6B723B531853E4F100E12A56 /* FirstDuplicate_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B521853E4F100E12A56 /* FirstDuplicate_unittest.cpp */; };
 		6B723B581854165300E12A56 /* abbreviate_sentence_unitttest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B571854165300E12A56 /* abbreviate_sentence_unitttest.cpp */; };
 		6BA6348F18559F1800FFE46A /* BinaryChop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6348E18559F1800FFE46A /* BinaryChop.cpp */; };
 		6BA634911856357200FFE46A /* BinaryChop_unitttest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA634901856357200FFE46A /* BinaryChop_unitttest.cpp */; };
+		6BFE342E185695BA00CA4B62 /* MathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE342C185695BA00CA4B62 /* MathUtil.cpp */; };
+		6BFE34301856DC5500CA4B62 /* Split.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE342F1856DC5500CA4B62 /* Split.cpp */; };
+		6BFE34341857023700CA4B62 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE34321856E6F700CA4B62 /* List.cpp */; };
+		6BFE34351857024500CA4B62 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B1DE3A518538D5800D3215F /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6B1DE3A018538D5800D3215F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
@@ -34,7 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B1DE3A218538D5800D3215F /* InterviewTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InterviewTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1DE3A218538D5800D3215F /* CppPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppPractice; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B1DE3A518538D5800D3215F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6B1DE3A718538D5800D3215F /* InterviewTests.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = InterviewTests.1; sourceTree = "<group>"; };
 		6B1DE3AF18538F3D00D3215F /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gtest.framework; sourceTree = "<group>"; };
@@ -42,18 +44,20 @@
 		6B1DE3C3185391E400D3215F /* Split_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Split_unittest.cpp; sourceTree = "<group>"; };
 		6B1DE3C6185393AD00D3215F /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest.a; sourceTree = "<group>"; };
 		6B1DE3C7185393AD00D3215F /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest_main.a; sourceTree = "<group>"; };
-		6B723B481853953200E12A56 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		6B723B491853953200E12A56 /* ListKTest_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListKTest_unittest.cpp; sourceTree = "<group>"; };
-		6B723B4A1853953200E12A56 /* ListKTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListKTest.cpp; sourceTree = "<group>"; };
-		6B723B4B1853953200E12A56 /* ListKTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ListKTest.hpp; sourceTree = "<group>"; };
 		6B723B4F1853CEFF00E12A56 /* ReverseString_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseString_unittest.cpp; sourceTree = "<group>"; };
 		6B723B521853E4F100E12A56 /* FirstDuplicate_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstDuplicate_unittest.cpp; sourceTree = "<group>"; };
-		6B723B541853E57200E12A56 /* firstDuplicate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = firstDuplicate.h; sourceTree = "<group>"; };
+		6B723B541853E57200E12A56 /* duplicate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = duplicate.h; sourceTree = "<group>"; };
 		6B723B561854149700E12A56 /* AbbreviateSentence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbbreviateSentence.h; sourceTree = "<group>"; };
 		6B723B571854165300E12A56 /* abbreviate_sentence_unitttest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abbreviate_sentence_unitttest.cpp; sourceTree = "<group>"; };
 		6BA6348D18559DAB00FFE46A /* BinaryChop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryChop.h; sourceTree = "<group>"; };
 		6BA6348E18559F1800FFE46A /* BinaryChop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryChop.cpp; sourceTree = "<group>"; };
 		6BA634901856357200FFE46A /* BinaryChop_unitttest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryChop_unitttest.cpp; sourceTree = "<group>"; };
+		6BFE342C185695BA00CA4B62 /* MathUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MathUtil.cpp; sourceTree = "<group>"; };
+		6BFE342D185695BA00CA4B62 /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
+		6BFE342F1856DC5500CA4B62 /* Split.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Split.cpp; sourceTree = "<group>"; };
+		6BFE34311856E6A000CA4B62 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		6BFE34321856E6F700CA4B62 /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,7 @@
 			children = (
 				6B1DE3C5185393AD00D3215F /* lib */,
 				6B1DE3AE18538F3D00D3215F /* Frameworks */,
-				6B1DE3A418538D5800D3215F /* InterviewTests */,
+				6B1DE3A418538D5800D3215F /* CppPractice */,
 				6B1DE3A318538D5800D3215F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,12 +85,12 @@
 		6B1DE3A318538D5800D3215F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B1DE3A218538D5800D3215F /* InterviewTests */,
+				6B1DE3A218538D5800D3215F /* CppPractice */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B1DE3A418538D5800D3215F /* InterviewTests */ = {
+		6B1DE3A418538D5800D3215F /* CppPractice */ = {
 			isa = PBXGroup;
 			children = (
 				6BA6348C18559D4500FFE46A /* BinaryChop */,
@@ -97,7 +101,10 @@
 				6B1DE3C2185390BA00D3215F /* SplitTest */,
 				6B1DE3A518538D5800D3215F /* main.cpp */,
 				6B1DE3A718538D5800D3215F /* InterviewTests.1 */,
+				6BFE342C185695BA00CA4B62 /* MathUtil.cpp */,
+				6BFE342D185695BA00CA4B62 /* MathUtil.h */,
 			);
+			name = CppPractice;
 			path = InterviewTests;
 			sourceTree = "<group>";
 		};
@@ -113,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				6B1DE3BF185390B100D3215F /* Split.h */,
+				6BFE342F1856DC5500CA4B62 /* Split.cpp */,
 				6B1DE3C3185391E400D3215F /* Split_unittest.cpp */,
 			);
 			name = SplitTest;
@@ -130,10 +138,9 @@
 		6B723B471853951F00E12A56 /* ListKTest */ = {
 			isa = PBXGroup;
 			children = (
-				6B723B481853953200E12A56 /* List.h */,
+				6BFE34311856E6A000CA4B62 /* List.h */,
+				6BFE34321856E6F700CA4B62 /* List.cpp */,
 				6B723B491853953200E12A56 /* ListKTest_unittest.cpp */,
-				6B723B4A1853953200E12A56 /* ListKTest.cpp */,
-				6B723B4B1853953200E12A56 /* ListKTest.hpp */,
 			);
 			name = ListKTest;
 			sourceTree = "<group>";
@@ -150,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				6B723B521853E4F100E12A56 /* FirstDuplicate_unittest.cpp */,
-				6B723B541853E57200E12A56 /* firstDuplicate.h */,
+				6B723B541853E57200E12A56 /* duplicate.h */,
 			);
 			name = FirstDuplicateTest;
 			sourceTree = "<group>";
@@ -177,9 +184,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6B1DE3A118538D5800D3215F /* InterviewTests */ = {
+		6B1DE3A118538D5800D3215F /* CppPractice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B1DE3AB18538D5800D3215F /* Build configuration list for PBXNativeTarget "InterviewTests" */;
+			buildConfigurationList = 6B1DE3AB18538D5800D3215F /* Build configuration list for PBXNativeTarget "CppPractice" */;
 			buildPhases = (
 				6B1DE39E18538D5800D3215F /* Sources */,
 				6B1DE39F18538D5800D3215F /* Frameworks */,
@@ -189,9 +196,9 @@
 			);
 			dependencies = (
 			);
-			name = InterviewTests;
+			name = CppPractice;
 			productName = InterviewTests;
-			productReference = 6B1DE3A218538D5800D3215F /* InterviewTests */;
+			productReference = 6B1DE3A218538D5800D3215F /* CppPractice */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +210,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Stewart Bracken";
 			};
-			buildConfigurationList = 6B1DE39D18538D5800D3215F /* Build configuration list for PBXProject "InterviewTests" */;
+			buildConfigurationList = 6B1DE39D18538D5800D3215F /* Build configuration list for PBXProject "CppPractice" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -215,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6B1DE3A118538D5800D3215F /* InterviewTests */,
+				6B1DE3A118538D5800D3215F /* CppPractice */,
 			);
 		};
 /* End PBXProject section */
@@ -225,15 +232,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFE34341857023700CA4B62 /* List.cpp in Sources */,
+				6BFE342E185695BA00CA4B62 /* MathUtil.cpp in Sources */,
+				6BFE34301856DC5500CA4B62 /* Split.cpp in Sources */,
+				6B1DE3C4185391E400D3215F /* Split_unittest.cpp in Sources */,
 				6B723B501853CEFF00E12A56 /* ReverseString_unittest.cpp in Sources */,
 				6B723B4C1853953200E12A56 /* ListKTest_unittest.cpp in Sources */,
-				6B723B4D1853953200E12A56 /* ListKTest.cpp in Sources */,
-				6B1DE3C4185391E400D3215F /* Split_unittest.cpp in Sources */,
 				6B723B581854165300E12A56 /* abbreviate_sentence_unitttest.cpp in Sources */,
 				6B723B531853E4F100E12A56 /* FirstDuplicate_unittest.cpp in Sources */,
 				6BA6348F18559F1800FFE46A /* BinaryChop.cpp in Sources */,
-				6B723B461853949F00E12A56 /* main.cpp in Sources */,
 				6BA634911856357200FFE46A /* BinaryChop_unitttest.cpp in Sources */,
+				6BFE34351857024500CA4B62 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +328,7 @@
 					"$(inherited)",
 					"/Users/stew/Dropbox/Code/C++/InterviewTests/lib",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CppPractice;
 			};
 			name = Debug;
 		};
@@ -334,14 +343,14 @@
 					"$(inherited)",
 					"/Users/stew/Dropbox/Code/C++/InterviewTests/lib",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CppPractice;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6B1DE39D18538D5800D3215F /* Build configuration list for PBXProject "InterviewTests" */ = {
+		6B1DE39D18538D5800D3215F /* Build configuration list for PBXProject "CppPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B1DE3A918538D5800D3215F /* Debug */,
@@ -350,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B1DE3AB18538D5800D3215F /* Build configuration list for PBXNativeTarget "InterviewTests" */ = {
+		6B1DE3AB18538D5800D3215F /* Build configuration list for PBXNativeTarget "CppPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B1DE3AC18538D5800D3215F /* Debug */,

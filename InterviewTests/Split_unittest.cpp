@@ -19,16 +19,26 @@ using namespace std;
 
 TEST(SPLITTEST, Split_delim){
     string s("what a snowy beautiful day.");
-    vector<string> out = InterviewTest::split(s, ' ');
+    vector<string> out = split(s, ' ');
     vector<string> correct = {"what", "a", "snowy", "beautiful", "day."};
-    EXPECT_TRUE(out==correct);
     copy(out.begin(), out.end(), ostream_iterator<string>(cout, " | "));
+    ASSERT_TRUE(out==correct);
+    
+    out = split(s, 'a');
+    correct = {"wh", "t ", " snowy be", "utiful d", "y."};
+    copy(out.begin(), out.end(), ostream_iterator<string>(cout, " | "));
+    ASSERT_TRUE(out==correct);
 }
 
-TEST(SPLITTEST, Split_letterdelim){
+TEST(SPLITTEST, Split_split_index_only){
     string s("what a snowy beautiful day.");
-    vector<string> out = InterviewTest::split(s, 'a');
-    vector<string> correct = {"wh", "t ", " snowy be", "utiful d", "y."};
-    EXPECT_TRUE(out==correct);
+    vector<string> out = split2(s, ' ');
+    vector<string> correct = {"what", "a", "snowy", "beautiful", "day."};
     copy(out.begin(), out.end(), ostream_iterator<string>(cout, " | "));
+    ASSERT_TRUE(out==correct);
+    
+    out = split2(s, 'a');
+    correct = {"wh", "t ", " snowy be", "utiful d", "y."};
+    copy(out.begin(), out.end(), ostream_iterator<string>(cout, " | "));
+    ASSERT_TRUE(out==correct);
 }

@@ -14,37 +14,8 @@
 
 using namespace std;
 
-namespace InterviewTest{
-    //only supports single delim character at this point
-static vector<string> split(const string& toSplit, const char& delim){
-    vector<string> out = vector<string>();
-    string::const_iterator curr = toSplit.begin(),
-                           prev = toSplit.begin(),
-                           end = toSplit.end();
-    int i=0;
-    while( curr != end ){
-        if ( strcmp( &delim, &(*curr) ) == 0 ) {
-            curr++; //skip multiple delimiting characters in a row
-            i++;
-        }else{
-            //curr points to non delim character
-            prev = curr;
-            int begin = i;
-            while( curr != end ){ //look for next delim or end
-                curr++;
-                i++;
-                //int cmp = strcmp( &delim, &(*curr) );
-                if ( delim == *curr )
-                    break;
-                    
-            }
-            string subs = toSplit.substr( begin, i-begin );
-            out.push_back(subs);
-            if( curr != end ) { curr++; ++i; } //skip the last delim found
-        }
-    }
-    return out;
-}
-}//namespace
+//only supports single delim character at this point
+vector<string> split(const string& toSplit, const char& delim);
+vector<string> split2(const string& toSplit, const char& delim);
 
 #endif

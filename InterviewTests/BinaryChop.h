@@ -1,6 +1,6 @@
 //
 //  BinaryChop.h
-//  InterviewTests
+//  CppTests
 //
 //  Created by Stewart Bracken on 12/8/13.
 //  Copyright (c) 2013 Stewart Bracken. All rights reserved.
@@ -15,7 +15,8 @@
 
 namespace BinaryChop {
     //These all should return the same value if supplied equivalent args
-    int chop1(int to_find, std::vector<int>& data);
+    int chop1(int to_find, const std::vector<int>& data);
+    int chop2(int to_find, const std::vector<int>& data);
 }
 
 #endif
