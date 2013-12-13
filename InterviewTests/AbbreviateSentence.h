@@ -11,16 +11,15 @@
 
 #include "Split.h"
 
-    string AbbreviateSentence(const string& sentence){
-        vector<string> words = split(sentence, ' ');
-        string result = "";/* *(words[0].begin()) + string(words[0].size()+"") + *(words[0].rbegin());
-        auto itor = words.begin();
-        for( itor++; itor != words.end(); ++itor){
-            //wrong, this needs to ignore puctuation
-            result += &" " [ *(itor->begin())] + itor->size() + *(itor->rbegin());
-        }*/
-        return result;
-    }
-
+string AbbreviateSentence(const string& sentence){
+    std::vector<string> words = split(sentence, ' ');
+    std::string result = "";/* *(words[0].begin()) + string(words[0].size()+"") + *(words[0].rbegin());
+    auto itor = words.begin();
+    for( itor++; itor != words.end(); ++itor){
+        //wrong, this needs to ignore puctuation
+        result += &" " [ *(itor->begin())] + itor->size() + *(itor->rbegin());
+    }*/
+    return result;
+}
 
 #endif

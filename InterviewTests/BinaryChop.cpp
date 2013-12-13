@@ -1,6 +1,6 @@
 //
 //  BinaryChop.cpp
-//  CppTests
+//  Return index of element
 //
 //  Created by Stewart Bracken on 12/8/13.
 //  Copyright (c) 2013 Stewart Bracken. All rights reserved.
@@ -8,8 +8,10 @@
 
 #include <stdio.h>
 #include <vector>
+#include <thread>
 
 #include "BinaryChop.h"
+#include "FunctionalVector.h"
 
 #include "MathUtil.h"
 
@@ -18,10 +20,9 @@ int BinaryChop::chop1(int to_find, const std::vector<int>& data){
     int len = static_cast<int>(data.size()),
         low = 0;
     if(len == 0) return NOT_FOUND;
-    int i;
-    int curr_data;
+    int i, curr_data;
     
-    while( len > 0 ){//&& low < data.size()
+    while( len > 0 ){
         i = len/2 + low;
         curr_data = data[i];
         if( curr_data == to_find ){
@@ -60,4 +61,63 @@ int BinaryChop::chop2(int to_find, const std::vector<int>& data){
     int length = static_cast<int>(data.size());
     int low = 0;
     return chop2_rec(to_find, data, length, low);
+}
+
+int BinaryChop::chop3(int to_find, const std::vector<int>& data){
+    FunctionalVector<int> fun_data(data); //copy data
+    size_t i;
+    int curr_data;
+    while( fun_data.size() > 0 ){
+        i = fun_data.size()/2;
+        curr_data = fun_data[i];
+        if( curr_data == to_find ){
+            return fun_data.index_at(i);
+        }else if( to_find > curr_data ){
+            //Need to search farther down array
+            fun_data.slice(i+1, (fun_data.size()-1)/2);
+        }else{ //to_find < curr_data
+            //Search again at a smaller index.
+            fun_data.slice(0, div_ceil( fun_data.size()-1, 2) );
+        }
+    }
+    return NOT_FOUND;
+}
+
+void chop4_thread(int to_find, const std::vector<int> &data, int low, int length, int* result){
+    int i = length/2 + low;
+    int curr_data = data[i]; //thread-safe read
+    
+    if(curr_data == to_find){
+        *result = i;
+        return;
+    }else if( to_find > curr_data ){
+        low = i+1;
+        length = (length-1)/2;
+    }else{
+        length = div_ceil(length-1, 2);
+    }
+    
+    if(length == 0)
+        return;
+    
+    std::thread continue_search(chop4_thread, to_find, data, low, length, result);
+    continue_search.join();
+}
+
+void chop4_thread_spawn(int to_find, const std::vector<int> &data, int low, int length, int* result){
+    if(length == 0) return;
+    if(to_find < data[low] || to_find > data[low+length-1]) return;
+    std::thread continue_search(chop4_thread, to_find, data, low, length, result);
+    continue_search.join();
+}
+
+//very slow. binary search wan't really meant to be multithreaded.
+int BinaryChop::chop4(int to_find, const std::vector<int> &data){
+    int result = NOT_FOUND; //The thread which finds it sets result to idx
+    int half = static_cast<int>(data.size())/2;
+    std::thread left(chop4_thread_spawn, to_find, data, 0, half, &result);
+    std::thread right(chop4_thread_spawn, to_find, data, half, div_ceil(data.size(), 2), &result);
+    left.join();
+    right.join();
+    return result;
 }

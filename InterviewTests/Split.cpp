@@ -67,3 +67,5 @@ vector<string> split2(const string& toSplit, const char& delim){
     }
     return out;
 }
+
+//TODO write split entirly in a single loop
