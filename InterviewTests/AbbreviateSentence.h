@@ -11,6 +11,7 @@
 
 #include "Split.h"
 
+//This is not finished.
 string AbbreviateSentence(const string& sentence){
     std::vector<string> words = split(sentence, ' ');
     std::string result = "";/* *(words[0].begin()) + string(words[0].size()+"") + *(words[0].rbegin());

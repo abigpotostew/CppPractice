@@ -14,7 +14,7 @@
 #include <gtest/gtest.h>
 
 TEST(AbbreviateSentence, AbbreviateSentence_test){
-    std::string original("What a lonely night.");
-    std::string expected("W2t a l4y n3t.");
+    std::string original("What a night.");
+    std::string expected("W2t a n3t.");
     std::cout<< AbbreviateSentence(original) << std::endl;
 }

@@ -15,13 +15,13 @@
 
 //These all should return the same value if supplied equivalent args
 namespace BinaryChop {
-    //Iterative
+    //Iterative - pretty fast!
     int chop1(int to_find, const std::vector<int>& data);
-    //Tail Recursive
+    //Tail Recursive - fast!
     int chop2(int to_find, const std::vector<int>& data);
-    //vector slicing
+    //vector slicing - slow due to data copying.
     int chop3(int to_find, const std::vector<int>& data);
-    //concurrent searching
+    //concurrent searching - slow
     int chop4(int to_find, const std::vector<int>& data);
 }
 

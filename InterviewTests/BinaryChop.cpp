@@ -15,7 +15,7 @@
 
 #include "MathUtil.h"
 
-//iterative approach
+//Iterative approach. Pretty fast, not as fast as chop2
 int BinaryChop::chop1(int to_find, const std::vector<int>& data){
     int len = static_cast<int>(data.size()),
         low = 0;
@@ -39,7 +39,7 @@ int BinaryChop::chop1(int to_find, const std::vector<int>& data){
     return NOT_FOUND;
 }
 
-//This is tail recursive
+//Helper tail recursive function for chop2
 static int chop2_rec(int& to_find, const std::vector<int>& data,
                      int& length, int& low){
     if(length == 0)
@@ -57,12 +57,15 @@ static int chop2_rec(int& to_find, const std::vector<int>& data,
     return chop2_rec(to_find, data, length, low);
 }
 
+// Tail recursive chop. This is the fastest implementation, I'm assuming
+// because it's compiler optimized.
 int BinaryChop::chop2(int to_find, const std::vector<int>& data){
     int length = static_cast<int>(data.size());
     int low = 0;
     return chop2_rec(to_find, data, length, low);
 }
 
+//Functional style array slicing binary chop
 int BinaryChop::chop3(int to_find, const std::vector<int>& data){
     FunctionalVector<int> fun_data(data); //copy data
     size_t i;
@@ -83,6 +86,7 @@ int BinaryChop::chop3(int to_find, const std::vector<int>& data){
     return NOT_FOUND;
 }
 
+//thread function for doing work on data.
 void chop4_thread(int to_find, const std::vector<int> &data, int low, int length, int* result){
     int i = length/2 + low;
     int curr_data = data[i]; //thread-safe read

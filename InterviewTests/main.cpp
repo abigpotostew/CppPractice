@@ -9,10 +9,9 @@
 #include <iostream>
 #include <gtest/gtest.h>
 
-// I'm having weird issues with linking, such that EXPECT_EQ() gives an
+// I'm having weird issues with linking gtest, such that EXPECT_EQ() gives an
 // undefined symbols error for the following function. It seems adding the below
 // code makes the macro work.
-
 testing::AssertionResult testing::internal::EqFailure(char const*, char const*, string const&, string const&, bool){
     return AssertionSuccess();
 }
