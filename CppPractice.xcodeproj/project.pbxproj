@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B1DE3A818538D5800D3215F /* InterviewTests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B1DE3A718538D5800D3215F /* InterviewTests.1 */; };
-		6B1DE3B018538F3D00D3215F /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1DE3AF18538F3D00D3215F /* gtest.framework */; };
-		6B1DE3C4185391E400D3215F /* Split_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B1DE3C3185391E400D3215F /* Split_unittest.cpp */; };
-		6B4102AA185A539A004F2022 /* FunctionalVector_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B4102A9185A539A004F2022 /* FunctionalVector_unittest.cpp */; };
-		6B723B4C1853953200E12A56 /* ListKTest_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B491853953200E12A56 /* ListKTest_unittest.cpp */; };
-		6B723B501853CEFF00E12A56 /* ReverseString_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B4F1853CEFF00E12A56 /* ReverseString_unittest.cpp */; };
-		6B723B531853E4F100E12A56 /* FirstDuplicate_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B521853E4F100E12A56 /* FirstDuplicate_unittest.cpp */; };
-		6B723B581854165300E12A56 /* abbreviate_sentence_unitttest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B723B571854165300E12A56 /* abbreviate_sentence_unitttest.cpp */; };
-		6BA6348F18559F1800FFE46A /* BinaryChop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6348E18559F1800FFE46A /* BinaryChop.cpp */; };
-		6BA634911856357200FFE46A /* BinaryChop_unitttest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA634901856357200FFE46A /* BinaryChop_unitttest.cpp */; };
-		6BFE342E185695BA00CA4B62 /* MathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE342C185695BA00CA4B62 /* MathUtil.cpp */; };
-		6BFE34301856DC5500CA4B62 /* Split.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE342F1856DC5500CA4B62 /* Split.cpp */; };
-		6BFE34341857023700CA4B62 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE34321856E6F700CA4B62 /* List.cpp */; };
-		6BFE34351857024500CA4B62 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B1DE3A518538D5800D3215F /* main.cpp */; };
+		6B17E0A4185D560B00A079ED /* abbreviate_sentence_unitttest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E08B185D560B00A079ED /* abbreviate_sentence_unitttest.cpp */; };
+		6B17E0A5185D560B00A079ED /* BinaryChop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E08E185D560B00A079ED /* BinaryChop.cpp */; };
+		6B17E0A6185D560B00A079ED /* BinaryChop_unitttest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E090185D560B00A079ED /* BinaryChop_unitttest.cpp */; };
+		6B17E0A7185D560B00A079ED /* FunctionalVector_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E092185D560B00A079ED /* FunctionalVector_unittest.cpp */; };
+		6B17E0A8185D560B00A079ED /* FirstDuplicate_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E095185D560B00A079ED /* FirstDuplicate_unittest.cpp */; };
+		6B17E0A9185D560B00A079ED /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E098185D560B00A079ED /* List.cpp */; };
+		6B17E0AA185D560B00A079ED /* ListKTest_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E09A185D560B00A079ED /* ListKTest_unittest.cpp */; };
+		6B17E0AB185D560B00A079ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E09B185D560B00A079ED /* main.cpp */; };
+		6B17E0AC185D560B00A079ED /* MathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E09C185D560B00A079ED /* MathUtil.cpp */; };
+		6B17E0AD185D560B00A079ED /* ReverseString_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E09F185D560B00A079ED /* ReverseString_unittest.cpp */; };
+		6B17E0AE185D560B00A079ED /* Split.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E0A1185D560B00A079ED /* Split.cpp */; };
+		6B17E0AF185D560B00A079ED /* Split_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B17E0A3185D560B00A079ED /* Split_unittest.cpp */; };
+		6B17E0B1185D563400A079ED /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B17E0B0185D563400A079ED /* gtest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,38 +29,34 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				6B1DE3A818538D5800D3215F /* InterviewTests.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B17E08B185D560B00A079ED /* abbreviate_sentence_unitttest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abbreviate_sentence_unitttest.cpp; sourceTree = "<group>"; };
+		6B17E08C185D560B00A079ED /* AbbreviateSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbbreviateSentence.h; sourceTree = "<group>"; };
+		6B17E08E185D560B00A079ED /* BinaryChop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryChop.cpp; sourceTree = "<group>"; };
+		6B17E08F185D560B00A079ED /* BinaryChop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryChop.h; sourceTree = "<group>"; };
+		6B17E090185D560B00A079ED /* BinaryChop_unitttest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryChop_unitttest.cpp; sourceTree = "<group>"; };
+		6B17E091185D560B00A079ED /* FunctionalVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionalVector.h; sourceTree = "<group>"; };
+		6B17E092185D560B00A079ED /* FunctionalVector_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FunctionalVector_unittest.cpp; sourceTree = "<group>"; };
+		6B17E094185D560B00A079ED /* duplicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = duplicate.h; sourceTree = "<group>"; };
+		6B17E095185D560B00A079ED /* FirstDuplicate_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstDuplicate_unittest.cpp; sourceTree = "<group>"; };
+		6B17E096185D560B00A079ED /* InterviewTests.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = InterviewTests.1; sourceTree = "<group>"; };
+		6B17E098185D560B00A079ED /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		6B17E099185D560B00A079ED /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		6B17E09A185D560B00A079ED /* ListKTest_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListKTest_unittest.cpp; sourceTree = "<group>"; };
+		6B17E09B185D560B00A079ED /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6B17E09C185D560B00A079ED /* MathUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MathUtil.cpp; sourceTree = "<group>"; };
+		6B17E09D185D560B00A079ED /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
+		6B17E09F185D560B00A079ED /* ReverseString_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseString_unittest.cpp; sourceTree = "<group>"; };
+		6B17E0A1185D560B00A079ED /* Split.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Split.cpp; sourceTree = "<group>"; };
+		6B17E0A2185D560B00A079ED /* Split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Split.h; sourceTree = "<group>"; };
+		6B17E0A3185D560B00A079ED /* Split_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Split_unittest.cpp; sourceTree = "<group>"; };
+		6B17E0B0185D563400A079ED /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gtest.framework; sourceTree = "<group>"; };
 		6B1DE3A218538D5800D3215F /* CppPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppPractice; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B1DE3A518538D5800D3215F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		6B1DE3A718538D5800D3215F /* InterviewTests.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = InterviewTests.1; sourceTree = "<group>"; };
-		6B1DE3AF18538F3D00D3215F /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gtest.framework; sourceTree = "<group>"; };
-		6B1DE3BF185390B100D3215F /* Split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Split.h; sourceTree = "<group>"; };
-		6B1DE3C3185391E400D3215F /* Split_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Split_unittest.cpp; sourceTree = "<group>"; };
-		6B1DE3C6185393AD00D3215F /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest.a; sourceTree = "<group>"; };
-		6B1DE3C7185393AD00D3215F /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest_main.a; sourceTree = "<group>"; };
-		6B4102A9185A539A004F2022 /* FunctionalVector_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FunctionalVector_unittest.cpp; sourceTree = "<group>"; };
-		6B47BD38185D508400134D4B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
-		6B723B491853953200E12A56 /* ListKTest_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListKTest_unittest.cpp; sourceTree = "<group>"; };
-		6B723B4F1853CEFF00E12A56 /* ReverseString_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseString_unittest.cpp; sourceTree = "<group>"; };
-		6B723B521853E4F100E12A56 /* FirstDuplicate_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstDuplicate_unittest.cpp; sourceTree = "<group>"; };
-		6B723B541853E57200E12A56 /* duplicate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = duplicate.h; sourceTree = "<group>"; };
-		6B723B561854149700E12A56 /* AbbreviateSentence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbbreviateSentence.h; sourceTree = "<group>"; };
-		6B723B571854165300E12A56 /* abbreviate_sentence_unitttest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abbreviate_sentence_unitttest.cpp; sourceTree = "<group>"; };
-		6BA6348D18559DAB00FFE46A /* BinaryChop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryChop.h; sourceTree = "<group>"; };
-		6BA6348E18559F1800FFE46A /* BinaryChop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryChop.cpp; sourceTree = "<group>"; };
-		6BA634901856357200FFE46A /* BinaryChop_unitttest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryChop_unitttest.cpp; sourceTree = "<group>"; };
-		6BFE342C185695BA00CA4B62 /* MathUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MathUtil.cpp; sourceTree = "<group>"; };
-		6BFE342D185695BA00CA4B62 /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
-		6BFE342F1856DC5500CA4B62 /* Split.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Split.cpp; sourceTree = "<group>"; };
-		6BFE34311856E6A000CA4B62 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		6BFE34321856E6F700CA4B62 /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
-		6BFE34371857AC0800CA4B62 /* FunctionalVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionalVector.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,19 +64,93 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B1DE3B018538F3D00D3215F /* gtest.framework in Frameworks */,
+				6B17E0B1185D563400A079ED /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B17E089185D560B00A079ED /* CppPractice */ = {
+			isa = PBXGroup;
+			children = (
+				6B17E08A185D560B00A079ED /* AbbreviateSentence */,
+				6B17E08D185D560B00A079ED /* BinaryChop */,
+				6B17E093185D560B00A079ED /* FirstDuplicate */,
+				6B17E096185D560B00A079ED /* InterviewTests.1 */,
+				6B17E097185D560B00A079ED /* ListKTest */,
+				6B17E09B185D560B00A079ED /* main.cpp */,
+				6B17E09C185D560B00A079ED /* MathUtil.cpp */,
+				6B17E09D185D560B00A079ED /* MathUtil.h */,
+				6B17E09E185D560B00A079ED /* ReverseStringTest */,
+				6B17E0A0185D560B00A079ED /* SplitTest */,
+			);
+			path = CppPractice;
+			sourceTree = "<group>";
+		};
+		6B17E08A185D560B00A079ED /* AbbreviateSentence */ = {
+			isa = PBXGroup;
+			children = (
+				6B17E08B185D560B00A079ED /* abbreviate_sentence_unitttest.cpp */,
+				6B17E08C185D560B00A079ED /* AbbreviateSentence.h */,
+			);
+			path = AbbreviateSentence;
+			sourceTree = "<group>";
+		};
+		6B17E08D185D560B00A079ED /* BinaryChop */ = {
+			isa = PBXGroup;
+			children = (
+				6B17E08E185D560B00A079ED /* BinaryChop.cpp */,
+				6B17E08F185D560B00A079ED /* BinaryChop.h */,
+				6B17E090185D560B00A079ED /* BinaryChop_unitttest.cpp */,
+				6B17E091185D560B00A079ED /* FunctionalVector.h */,
+				6B17E092185D560B00A079ED /* FunctionalVector_unittest.cpp */,
+			);
+			path = BinaryChop;
+			sourceTree = "<group>";
+		};
+		6B17E093185D560B00A079ED /* FirstDuplicate */ = {
+			isa = PBXGroup;
+			children = (
+				6B17E094185D560B00A079ED /* duplicate.h */,
+				6B17E095185D560B00A079ED /* FirstDuplicate_unittest.cpp */,
+			);
+			path = FirstDuplicate;
+			sourceTree = "<group>";
+		};
+		6B17E097185D560B00A079ED /* ListKTest */ = {
+			isa = PBXGroup;
+			children = (
+				6B17E098185D560B00A079ED /* List.cpp */,
+				6B17E099185D560B00A079ED /* List.h */,
+				6B17E09A185D560B00A079ED /* ListKTest_unittest.cpp */,
+			);
+			path = ListKTest;
+			sourceTree = "<group>";
+		};
+		6B17E09E185D560B00A079ED /* ReverseStringTest */ = {
+			isa = PBXGroup;
+			children = (
+				6B17E09F185D560B00A079ED /* ReverseString_unittest.cpp */,
+			);
+			path = ReverseStringTest;
+			sourceTree = "<group>";
+		};
+		6B17E0A0185D560B00A079ED /* SplitTest */ = {
+			isa = PBXGroup;
+			children = (
+				6B17E0A1185D560B00A079ED /* Split.cpp */,
+				6B17E0A2185D560B00A079ED /* Split.h */,
+				6B17E0A3185D560B00A079ED /* Split_unittest.cpp */,
+			);
+			path = SplitTest;
+			sourceTree = "<group>";
+		};
 		6B1DE39918538D5800D3215F = {
 			isa = PBXGroup;
 			children = (
-				6B1DE3C5185393AD00D3215F /* lib */,
 				6B1DE3AE18538F3D00D3215F /* Frameworks */,
-				6B1DE3A418538D5800D3215F /* CppPractice */,
+				6B17E089185D560B00A079ED /* CppPractice */,
 				6B1DE3A318538D5800D3215F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,98 +163,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B1DE3A418538D5800D3215F /* CppPractice */ = {
-			isa = PBXGroup;
-			children = (
-				6BA6348C18559D4500FFE46A /* BinaryChop */,
-				6B723B551854146600E12A56 /* AbbreviateSentence */,
-				6B723B511853E4C700E12A56 /* FirstDuplicateTest */,
-				6B723B4E1853CEE200E12A56 /* ReverseStringTest */,
-				6B723B471853951F00E12A56 /* ListKTest */,
-				6B1DE3C2185390BA00D3215F /* SplitTest */,
-				6B1DE3A518538D5800D3215F /* main.cpp */,
-				6B1DE3A718538D5800D3215F /* InterviewTests.1 */,
-				6BFE342C185695BA00CA4B62 /* MathUtil.cpp */,
-				6BFE342D185695BA00CA4B62 /* MathUtil.h */,
-				6B47BD38185D508400134D4B /* README */,
-			);
-			name = CppPractice;
-			path = InterviewTests;
-			sourceTree = "<group>";
-		};
 		6B1DE3AE18538F3D00D3215F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B1DE3AF18538F3D00D3215F /* gtest.framework */,
+				6B17E0B0185D563400A079ED /* gtest.framework */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		6B1DE3C2185390BA00D3215F /* SplitTest */ = {
-			isa = PBXGroup;
-			children = (
-				6B1DE3BF185390B100D3215F /* Split.h */,
-				6BFE342F1856DC5500CA4B62 /* Split.cpp */,
-				6B1DE3C3185391E400D3215F /* Split_unittest.cpp */,
-			);
-			name = SplitTest;
-			sourceTree = "<group>";
-		};
-		6B1DE3C5185393AD00D3215F /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				6B1DE3C6185393AD00D3215F /* libgtest.a */,
-				6B1DE3C7185393AD00D3215F /* libgtest_main.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		6B723B471853951F00E12A56 /* ListKTest */ = {
-			isa = PBXGroup;
-			children = (
-				6BFE34311856E6A000CA4B62 /* List.h */,
-				6BFE34321856E6F700CA4B62 /* List.cpp */,
-				6B723B491853953200E12A56 /* ListKTest_unittest.cpp */,
-			);
-			name = ListKTest;
-			sourceTree = "<group>";
-		};
-		6B723B4E1853CEE200E12A56 /* ReverseStringTest */ = {
-			isa = PBXGroup;
-			children = (
-				6B723B4F1853CEFF00E12A56 /* ReverseString_unittest.cpp */,
-			);
-			name = ReverseStringTest;
-			sourceTree = "<group>";
-		};
-		6B723B511853E4C700E12A56 /* FirstDuplicateTest */ = {
-			isa = PBXGroup;
-			children = (
-				6B723B521853E4F100E12A56 /* FirstDuplicate_unittest.cpp */,
-				6B723B541853E57200E12A56 /* duplicate.h */,
-			);
-			name = FirstDuplicateTest;
-			sourceTree = "<group>";
-		};
-		6B723B551854146600E12A56 /* AbbreviateSentence */ = {
-			isa = PBXGroup;
-			children = (
-				6B723B561854149700E12A56 /* AbbreviateSentence.h */,
-				6B723B571854165300E12A56 /* abbreviate_sentence_unitttest.cpp */,
-			);
-			name = AbbreviateSentence;
-			sourceTree = "<group>";
-		};
-		6BA6348C18559D4500FFE46A /* BinaryChop */ = {
-			isa = PBXGroup;
-			children = (
-				6BA6348D18559DAB00FFE46A /* BinaryChop.h */,
-				6BA6348E18559F1800FFE46A /* BinaryChop.cpp */,
-				6BA634901856357200FFE46A /* BinaryChop_unitttest.cpp */,
-				6BFE34371857AC0800CA4B62 /* FunctionalVector.h */,
-				6B4102A9185A539A004F2022 /* FunctionalVector_unittest.cpp */,
-			);
-			name = BinaryChop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,18 +222,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BFE34341857023700CA4B62 /* List.cpp in Sources */,
-				6B4102AA185A539A004F2022 /* FunctionalVector_unittest.cpp in Sources */,
-				6BFE342E185695BA00CA4B62 /* MathUtil.cpp in Sources */,
-				6BFE34301856DC5500CA4B62 /* Split.cpp in Sources */,
-				6B1DE3C4185391E400D3215F /* Split_unittest.cpp in Sources */,
-				6B723B501853CEFF00E12A56 /* ReverseString_unittest.cpp in Sources */,
-				6B723B4C1853953200E12A56 /* ListKTest_unittest.cpp in Sources */,
-				6B723B581854165300E12A56 /* abbreviate_sentence_unitttest.cpp in Sources */,
-				6B723B531853E4F100E12A56 /* FirstDuplicate_unittest.cpp in Sources */,
-				6BA6348F18559F1800FFE46A /* BinaryChop.cpp in Sources */,
-				6BA634911856357200FFE46A /* BinaryChop_unitttest.cpp in Sources */,
-				6BFE34351857024500CA4B62 /* main.cpp in Sources */,
+				6B17E0AC185D560B00A079ED /* MathUtil.cpp in Sources */,
+				6B17E0A5185D560B00A079ED /* BinaryChop.cpp in Sources */,
+				6B17E0AA185D560B00A079ED /* ListKTest_unittest.cpp in Sources */,
+				6B17E0A8185D560B00A079ED /* FirstDuplicate_unittest.cpp in Sources */,
+				6B17E0A4185D560B00A079ED /* abbreviate_sentence_unitttest.cpp in Sources */,
+				6B17E0AD185D560B00A079ED /* ReverseString_unittest.cpp in Sources */,
+				6B17E0A9185D560B00A079ED /* List.cpp in Sources */,
+				6B17E0A6185D560B00A079ED /* BinaryChop_unitttest.cpp in Sources */,
+				6B17E0AE185D560B00A079ED /* Split.cpp in Sources */,
+				6B17E0AB185D560B00A079ED /* main.cpp in Sources */,
+				6B17E0AF185D560B00A079ED /* Split_unittest.cpp in Sources */,
+				6B17E0A7185D560B00A079ED /* FunctionalVector_unittest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +314,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/stew/Dropbox/Code/C++/InterviewTests/Frameworks",
+					"/Users/stew/Dropbox/Code/C++/CppPractice/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -346,6 +330,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/stew/Dropbox/Code/C++/InterviewTests/Frameworks",
+					"/Users/stew/Dropbox/Code/C++/CppPractice/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
