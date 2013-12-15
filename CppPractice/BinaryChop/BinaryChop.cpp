@@ -74,13 +74,13 @@ int BinaryChop::chop3(int to_find, const std::vector<int>& data){
         i = fun_data.size()/2;
         curr_data = fun_data[i];
         if( curr_data == to_find ){
-            return fun_data.index_at(i);
+            return static_cast<int>(fun_data.index_at(i));
         }else if( to_find > curr_data ){
             //Need to search farther down array
             fun_data.slice(i+1, (fun_data.size()-1)/2);
         }else{ //to_find < curr_data
             //Search again at a smaller index.
-            fun_data.slice(0, div_ceil( fun_data.size()-1, 2) );
+            fun_data.slice(0, div_ceil( static_cast<int>(fun_data.size()-1), 2) );
         }
     }
     return NOT_FOUND;
@@ -120,8 +120,32 @@ int BinaryChop::chop4(int to_find, const std::vector<int> &data){
     int result = NOT_FOUND; //The thread which finds it sets result to idx
     int half = static_cast<int>(data.size())/2;
     std::thread left(chop4_thread_spawn, to_find, data, 0, half, &result);
-    std::thread right(chop4_thread_spawn, to_find, data, half, div_ceil(data.size(), 2), &result);
+    std::thread right(chop4_thread_spawn, to_find, data, half, div_ceil(static_cast<int>(data.size()), 2), &result);
     left.join();
     right.join();
     return result;
+}
+
+//Iterative approach 2. Attempting to be faster than tail recursion.
+// This ends up being just as fast as tail recursion.
+// Wow, it turns out I overengineered all my other solutions.
+// This one is much more simple and elegant. Nice dice.
+int BinaryChop::chop5(int to_find, const std::vector<int>& data){
+    int imax = static_cast<int>(data.size()-1),
+        imin = 0,
+        imid;
+    if(imax < 0) return NOT_FOUND;
+    
+    while( imin < imax ){
+        imid = (imin + imax)/2;
+        if( to_find > data[imid] ){
+            imin = imid+1;
+        }else{ //to_find < curr_data
+            imax = imid;
+        }
+    }
+    if( imin == imax && data[imin] == to_find){
+        return imin;
+    }
+    return NOT_FOUND;
 }

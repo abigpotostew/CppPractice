@@ -23,6 +23,8 @@ namespace BinaryChop {
     int chop3(int to_find, const std::vector<int>& data);
     //concurrent searching - slow
     int chop4(int to_find, const std::vector<int>& data);
+    //iterative with deferred equality
+    int chop5(int to_find, const std::vector<int>& data);
 }
 
 #endif
