@@ -46,6 +46,7 @@
 		6B1DE3C6185393AD00D3215F /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest.a; sourceTree = "<group>"; };
 		6B1DE3C7185393AD00D3215F /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest_main.a; sourceTree = "<group>"; };
 		6B4102A9185A539A004F2022 /* FunctionalVector_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FunctionalVector_unittest.cpp; sourceTree = "<group>"; };
+		6B47BD38185D508400134D4B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 		6B723B491853953200E12A56 /* ListKTest_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListKTest_unittest.cpp; sourceTree = "<group>"; };
 		6B723B4F1853CEFF00E12A56 /* ReverseString_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseString_unittest.cpp; sourceTree = "<group>"; };
 		6B723B521853E4F100E12A56 /* FirstDuplicate_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstDuplicate_unittest.cpp; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				6B1DE3A718538D5800D3215F /* InterviewTests.1 */,
 				6BFE342C185695BA00CA4B62 /* MathUtil.cpp */,
 				6BFE342D185695BA00CA4B62 /* MathUtil.h */,
+				6B47BD38185D508400134D4B /* README */,
 			);
 			name = CppPractice;
 			path = InterviewTests;
