@@ -17,7 +17,7 @@ vector<string> split(const string& toSplit, const char& delim){
                            begin = toSplit.begin(),
                            end = toSplit.end();
     while( curr != end ){
-        if ( strcmp( &delim, &(*curr) ) == 0 ) {
+        if ( delim == *curr ) {
             curr++; //skip multiple delimiting characters in a row
         }else{
             //curr points to non delim character

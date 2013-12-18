@@ -116,7 +116,7 @@ void chop4_thread_spawn(int to_find, const std::vector<int> &data, int low, int 
 }
 
 //very slow. binary search wan't really meant to be multithreaded.
-int BinaryChop::chop4(int to_find, const std::vector<int> &data){
+int BinaryChop::chop4( int to_find, const std::vector<int> &data ){
     int result = NOT_FOUND; //The thread which finds it sets result to idx
     int half = static_cast<int>(data.size())/2;
     std::thread left(chop4_thread_spawn, to_find, data, 0, half, &result);
@@ -130,11 +130,11 @@ int BinaryChop::chop4(int to_find, const std::vector<int> &data){
 // This ends up being just as fast as tail recursion.
 // Wow, it turns out I overengineered all my other solutions.
 // This one is much more simple and elegant. Nice dice.
-int BinaryChop::chop5(int to_find, const std::vector<int>& data){
-    int imax = static_cast<int>(data.size()-1),
+int BinaryChop::chop5( int to_find, const std::vector<int>& data ){
+    int imax = static_cast<int>( data.size()-1 ),
         imin = 0,
         imid;
-    if(imax < 0) return NOT_FOUND;
+    if( imax < 0 ) return NOT_FOUND;
     
     while( imin < imax ){
         imid = (imin + imax)/2;
@@ -144,8 +144,37 @@ int BinaryChop::chop5(int to_find, const std::vector<int>& data){
             imax = imid;
         }
     }
-    if( imin == imax && data[imin] == to_find){
+    if( imin == imax && data[imin] == to_find ){
         return imin;
     }
     return NOT_FOUND;
+}
+
+//Helper tail recursive function for chop6
+static int chop6_rec( int& to_find, const std::vector<int>& data,
+                     int& imin, int& imax ){
+    if( imin == imax ){
+        if( data[imin] == to_find ){
+            return imin;
+        } else {
+            return NOT_FOUND;
+        }
+    }
+
+    int imid = ( imin + imax )/2;
+    if( to_find > data[imid] ){
+        imin = imid+1;
+    }else{
+        imax = imid;
+    }
+
+    return chop6_rec( to_find, data, imin, imax );
+}
+
+int BinaryChop::chop6( int to_find, const std::vector<int>& data ){
+    int imax = static_cast<int>( data.size()-1 );
+    int imin = 0;
+    if( imax < 0 )
+        return NOT_FOUND;
+    return chop6_rec( to_find, data, imin, imax );
 }

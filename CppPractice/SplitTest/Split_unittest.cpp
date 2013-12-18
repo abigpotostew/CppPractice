@@ -28,6 +28,12 @@ TEST(SPLITTEST, Split_delim){
     correct = {"wh", "t ", " snowy be", "utiful d", "y."};
     copy(out.begin(), out.end(), ostream_iterator<string>(cout, " | "));
     ASSERT_TRUE(out==correct);
+    
+    s = "  spaces in front";
+    out = split(s, ' ');
+    correct = {"spaces", "in", "front"};
+    copy(out.begin(), out.end(), ostream_iterator<string>(cout, " | "));
+    ASSERT_TRUE(out==correct);
 }
 
 TEST(SPLITTEST, Split_split_index_only){
